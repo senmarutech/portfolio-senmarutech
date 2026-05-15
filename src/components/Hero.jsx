@@ -39,7 +39,7 @@ const Hero = () => {
                     <p className="text-indigo-950 font-medium text-center md:text-left text-base md:text-xl mt-4"
                     data-aos="fade-right"
                     data-aos-delay="200">
-                        Frontend Developer & UI/UX Designer Enthusiast
+                        Frontend Developer & <br />UI/UX Designer Enthusiast
                     </p>
                 </div>
                 <p className="text-indigo-950 pt-6 text-center lg:text-left
