@@ -33,7 +33,7 @@ const Hero = () => {
                     <h1 className="text-indigo-950 font-bold text-center md:text-left text-2xl md:text-4xl leading-tight"
                     data-aos="fade-right"
                     data-aos-delay="100"> 
-                        Heyooo, <span className="text-transparent bg-clip-text
+                        Yaps, <span className="text-transparent bg-clip-text
                         bg-linear-to-r from-blue-500 to-cyan-500">I'm senmarutech</span>👍
                     </h1>
                     <p className="text-indigo-950 font-medium text-center md:text-left text-base md:text-xl mt-4"
