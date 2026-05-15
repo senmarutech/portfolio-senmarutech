@@ -54,7 +54,7 @@ const experiences = [
     period: "2023 - 2024",
     desc: "Focused on creating modern and user-friendly interface designs, wireframing, prototyping, and improving user experience for web and mobile applications.",
     borderColor: "border-blue-500/30",
-    dotColor: "bg-cyan-500",
+    dotColor: "bg-blue-500",
     borderClass: "border-blue-500/20",
     dateColor: "text-indigo-950 text-xs md:text-sm font-semibold"
   },
