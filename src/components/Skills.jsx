@@ -14,7 +14,7 @@ const skills = [
     icon: CodeBracketIcon,
     iconColor: "text-blue-400",
     percentage: 90,
-    percentageColor: "text-blue-600 text-xs md:text-sm",
+    percentageColor: "text-cyan-500 text-xs md:text-sm",
     gradient: "bg-gradient-to-r from-blue-500 to-cyan-500",
   },
   {
@@ -23,7 +23,7 @@ const skills = [
     icon: SpeakerWaveIcon,
     iconColor: "text-blue-400",
     percentage: 80,
-    percentageColor: "text-blue-600 text-xs md:text-sm",
+    percentageColor: "text-cyan-500 text-xs md:text-sm",
     gradient: "bg-gradient-to-r from-blue-500 to-cyan-500",
   },
   {
@@ -32,7 +32,7 @@ const skills = [
     icon: PaintBrushIcon,
     iconColor: "text-blue-400",
     percentage: 80,
-    percentageColor: "text-blue-600 text-xs md:text-sm",
+    percentageColor: "text-cyan-500 text-xs md:text-sm",
     gradient: "bg-gradient-to-r from-blue-500 to-cyan-500",
   },
   {
@@ -41,7 +41,7 @@ const skills = [
     icon: DevicePhoneMobileIcon,
     iconColor: "text-blue-400",
     percentage: 80,
-    percentageColor: "text-blue-600 text-xs md:text-sm",
+    percentageColor: "text-cyan-500 text-xs md:text-sm",
     gradient: "bg-gradient-to-r from-blue-500 to-cyan-500"
   },
 ];
