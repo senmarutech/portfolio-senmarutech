@@ -61,7 +61,7 @@ const experiences = [
   {
     id: 2,
     position: "Admin Operating of CBT System",
-    company: "Haji Syukron Foundation Cilacap",
+    company: "Yasaro Foundation Cilacap",
     period: "2024 - Present",
     desc: "Managing operational systems, maintaining digital administration, and supporting daily technical activities to ensure smooth organizational workflows.",
     borderColor: "border-blue-500/30",
