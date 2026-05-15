@@ -42,7 +42,7 @@ const skills = [
     iconColor: "text-blue-400",
     percentage: 80,
     percentageColor: "text-blue-600 text-xs md:text-sm",
-    gradient: "bg-gradient-to-r from-cyan-500 to-blue-500",
+    gradient: "bg-gradient-to-r from-blue-500 to-cyan-500"
   },
 ];
 
@@ -111,7 +111,7 @@ export default function Skills() {
             </div>
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
                 <div data-aos="fade-right">
-                    <h3 className="text-xl md:text-2xl font-medium text-indigo-950 mb-8 flex
+                    <h3 className="text-xl md:text-2xl font-bold text-indigo-950 mb-8 flex
                     items-center gap-3">
                         Technical Skills
                     </h3>
@@ -149,11 +149,11 @@ export default function Skills() {
                     </div>
                     {/* TECH STACK */}
                     <div className="mt-12">
-                        <h4 className="text-xl md:text-2xl font-bold text-indigo-950 mb-6 flex
-                        items-center gap-2">
+                        <h3 className="text-xl md:text-2xl font-bold text-indigo-950 mb-8 flex
+                    items-center gap-3">
                             <Squares2X2Icon className="h-5 w-5 md:w-6 md:h-6 text-blue-400" />
                             Tech Stack
-                        </h4>
+                        </h3>
                         <div className="flex flex-wrap gap-3 bg-white/50 rounded-2xl p-6 shadow-xl backdrop-blur-sm">
                             {techStack.map((tech) => (
                             <span
