@@ -8,14 +8,14 @@ const Testimonials = () => {
     const [autoplay, setAutoplay] = useState(true);
 
     const testimonials = [
-        {id: 1, name: 'Dr. M. Khanif M.Pd.B.I', role: 'CEO of yasarofoundation', rating: 4,
-            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+        {id: 1, name: 'Dr. M. Khanif, M.Pd.B.I', role: 'CEO of yasarofoundation', rating: 4,
+            content: 'Working together on this website development was an excellent experience. The resulting design looks modern, professional, and responsive across multiple devices. The work was carried out with clear communication, timely delivery, and attention to detail based on the clients needs. I greatly appreciate the quality of their work and dedication. Highly recommended for professional web development projects.'
         },
         {id: 2, name: 'Nawalia Nur Fitriyah', role: 'Tutor of ESA Course', rating: 5,
             content: 'The website design is clean, modern, responsive, and informative, reflecting professionalism. Good Pisan!'
         },
         {id: 3, name: 'Aldika Gagah Prasetya', role: 'Tutor of ESA Course', rating: 4,
-            content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.'
+            content: 'The visual changes are really noticeable. It is now cleaner, has a clear focus, and navigation is easier. It does not tire your eyes.'
         },
         {id: 4, name: 'Robit Totussangadah', role: 'Tutor of ESA Course', rating: 4,
             content: 'On the whole, yasaro website provides a clear and effective way of presenting information.'

@@ -17,10 +17,6 @@ const Contact = () => {
         }));
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-    };
-
   return (
     <section id='contact' className='relative min-h-screen flex items-center py-20 overflow-hidden'>
         <div className='relative z-10 container mx-auto px-4 sm:px-6 lg:px-8'>
@@ -40,7 +36,13 @@ const Contact = () => {
                 viewport={{ once:true }}
                 transition={{ delay: 0.3, duration: 0.6 }}
                 className='w-full max-w-xl mx-auto mt-6'>
-                    <form className='space-y-4 md:space-y-6'>
+                    <form className='space-y-4 md:space-y-6'
+                    action="https://api.web3forms.com/submit" 
+                    method="POST">
+                        <input
+                        type="hidden"
+                        name="access_key"
+                        value="4dd580d1-8488-4665-b743-2dca8ab69bcc"/>
                         {/* Name */}
                         <div>
                             <input type="text" name='name'
@@ -86,7 +88,6 @@ const Contact = () => {
                         type='submit'
                         whileHover={{ scale: 1.05 }}
                         whileTap={{ scale: 0.95 }}
-                        onChange={handleSubmit}
                         className='w-full px-6 md:px-8 py-3 md:py-4 bg-linear-to-r
                         from-blue-500 to-cyan-500 text-white rounded-full font-semibold
                         text-sm md:text-base shadow-lg hover:shadow-cyan-600/30 transition-all

@@ -70,15 +70,16 @@ const Hero = () => {
                     </span>
                 </a>
                 <a 
-                href="/resume.pdf" download
+                href="/cv.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="border-2 border-blue-400 px-8 md:px-10 py-4
                 rounded-xl relative group w-full sm:w-max flex justify-center
-                hover:bg-blue-400/10 transition-all duration-300">
+                hover:bg-blue-400/10 transition-all duration-300 download-loader">
                 <div className="flex items-center justify-center relative">
                     <ArrowDownTrayIcon
                     className="mr-2 w-4 h-4 md:w-5 md:h-5 text-blue-400 group-hover:translate-y-1
                     transition-transform"/>
-                    <div className='download-loader text-white hidden'></div>
                     <span className="text-blue-400 font-semibold text-sm md:text-base">
                         Download CV
                     </span>
