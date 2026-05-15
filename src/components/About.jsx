@@ -139,7 +139,7 @@ export default function About() {
                             bg-linear-to-r from-blue-500 to-cyan-500">Me</span>
                         </h2>
                         <p className="text-white font-medium text-base md:text-lg max-w-2xl mx-auto">
-                          Frontend Developer & UI/UX Designer Enthusiast
+                          Frontend Developer & <br />UI/UX Designer Enthusiast
                         </p>
                     </div>
                     <p className="text-blue-100 pt-6 text-center lg:text-left text-sm md:text-base leading-relaxed"
