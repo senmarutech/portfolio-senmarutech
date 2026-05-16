@@ -8,7 +8,7 @@ const Testimonials = () => {
     const [autoplay, setAutoplay] = useState(true);
 
     const testimonials = [
-        {id: 1, name: 'Dr. M. Khanif, M.Pd.B.I', role: 'CEO of yasarofoundation', rating: 4,
+        {id: 1, name: 'Dr. M. Khanif, M.Pd.B.I', role: 'CEO of Yasaro Foundation', rating: 4,
             content: 'Working together on this website development was an excellent experience. The resulting design looks modern, professional, and responsive across multiple devices. The work was carried out with clear communication, timely delivery, and attention to detail based on the clients needs. I greatly appreciate the quality of their work and dedication. Highly recommended for professional web development projects.'
         },
         {id: 2, name: 'Nawalia Nur Fitriyah', role: 'Tutor of ESA Course', rating: 5,
@@ -82,10 +82,10 @@ const Testimonials = () => {
                                         <FaUserCircle className="text-white" size={40}/>
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-lg text-indigo-950">
+                                        <h4 className="font-bold text-base md:text-lg text-indigo-950">
                                             {testimonials[currentIndex].name}
                                         </h4>
-                                        <p className="text-blue-600">
+                                        <p className="text-blue-500 text-sm md:text-base">
                                             {testimonials[currentIndex].role}
                                         </p>
                                     </div>
