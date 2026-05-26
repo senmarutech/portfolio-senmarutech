@@ -3,6 +3,7 @@ import work1 from '../assets/work1.png'
 import work2 from '../assets/work2.png'
 import work3 from '../assets/work3.png'
 import work4 from '../assets/work4.png'
+import work5 from '../assets/work5.png'
 import { FaChevronLeft, FaChevronRight, FaExternalLinkAlt, FaGithub } from "react-icons/fa"
 import { motion } from 'framer-motion';
 
@@ -17,11 +18,14 @@ const Projects = () => {
         {id:2, title: "LumiSmile Website", category: 'Frontend',
             img: work2, tech: ['Tailwind CSS', 'Javascript', 'Reactjs'], github: "https://github.com/senmarutech/LumiSMile-Website ",
             live: "#"},
-        {id:3, title: "LumiPets Website", category: 'Frontend',
-            img: work3, tech: ['Tailwind CSS', 'Javascript', 'Reactjs'], github: "https://github.com/senmarutech/",
+        {id:3, title: "LumiThesis Website", category: 'Frontend',
+            img: work3, tech: ['Tailwind CSS', 'Javascript', 'Reactjs', 'Framer Motion'], github: "https://github.com/senmarutech/",
             live: "#"},
         {id:4, title: "LumiNails Website", category: 'Frontend',
             img: work4, tech: ['Tailwind CSS', 'Javascript', 'Reactjs', 'Framer Motion'], github: "https://github.com/senmarutech/LumiNails-Website",
+            live: "#"},
+        {id:5, title: "LumiPets Website", category: 'Frontend',
+            img: work5, tech: ['Tailwind CSS', 'Javascript', 'Reactjs'], github: "https://github.com/senmarutech/",
             live: "#"}
     ];
 
