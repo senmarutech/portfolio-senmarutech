@@ -1,5 +1,5 @@
 import {motion} from 'framer-motion'
-import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
+import { FaGithub, FaInstagram, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
     const currentYear = new Date().getFullYear();
@@ -30,6 +30,7 @@ const Footer = () => {
                         {Icon: FaGithub, href: 'https://github.com/senmarutech'},
                         {Icon: FaLinkedin, href: 'https://www.linkedin.com/in/ahmad-nur-rozik-9240a1299/'},
                         {Icon: FaWhatsapp, href: 'https://wa.me/6282225596862'},
+                        {Icon: FaInstagram, href: 'https://www.instagram.com/nuroziqahmad03'},
                     ].map(({ Icon, href}, index) => (
                         <motion.a
                         key={index}

@@ -30,16 +30,16 @@ const Hero = () => {
         gap-10 lg:gap-20">
             <div className="flex flex-col md:mt-0 mt-20 justify-center">
                 <div className="text-white lg:text-left">
-                    <h1 className="text-indigo-950 font-bold text-center md:text-left text-2xl md:text-4xl leading-tight"
+                    <h1 className="text-indigo-950 font-grotesk font-bold text-center md:text-left text-3xl md:text-5xl leading-tight"
                     data-aos="fade-right"
                     data-aos-delay="100"> 
                         Yaps, <span className="text-transparent bg-clip-text
-                        bg-linear-to-r from-blue-500 to-cyan-500">I'm senmarutech</span>👍
+                        bg-linear-to-r from-blue-500 to-cyan-500">I'm senmarutech</span>
                     </h1>
-                    <p className="text-indigo-950 font-medium text-center md:text-left text-base md:text-xl mt-4"
+                    <p className="text-indigo-950 font-medium text-center font-grotesk md:text-left text-lg md:text-2xl mt-4"
                     data-aos="fade-right"
                     data-aos-delay="200">
-                        Frontend Developer & <br />UI/UX Designer Enthusiast
+                        Frontend Developer & UI/UX Designer Enthusiast
                     </p>
                 </div>
                 <p className="text-indigo-950 pt-6 text-center lg:text-left

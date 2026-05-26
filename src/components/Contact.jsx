@@ -22,11 +22,11 @@ const Contact = () => {
         <div className='relative z-10 container mx-auto px-4 sm:px-6 lg:px-8'>
             <div className="text-center mb-16"
             data-aos="fade-up">
-                <h2 className="text-3xl md:text-4xl font-bold text-indigo-950 mb-4">
+                <h2 className="text-3xl md:text-5xl font-grotesk font-bold text-indigo-950 mb-4">
                     Contact<span className="text-transparent bg-clip-text bg-linear-to-r
                     from-blue-500 to-cyan-500"> Me</span>
                 </h2>
-                <p className="text-indigo-950 text-base md:text-lg max-w-2xl mx-auto">
+                <p className="text-indigo-950 text-lg md:text-xl font-grotesk max-w-2xl mx-auto">
                     Have a question or want to work together? Send me a message!
                 </p>
                 {/* Form */}

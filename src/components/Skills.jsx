@@ -101,11 +101,11 @@ export default function Skills() {
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16"
             data-aos="fade-up">
-                <h2 className="text-2xl md:text-4xl font-bold text-indigo-950 mb-4">
+                <h2 className="text-3xl md:text-5xl font-grotesk font-bold text-indigo-950 mb-4">
                     Skills<span className="text-transparent bg-clip-text bg-linear-to-r
                     from-blue-500 to-cyan-500"> & Experience</span>
                 </h2>
-                <p className="text-indigo-950 font-medium text-base md:text-lg max-w-2xl mx-auto">
+                <p className="text-indigo-950 font-medium text-base md:text-xl max-w-2xl mx-auto">
                     My technical expertise and professional journey
                 </p>
             </div>

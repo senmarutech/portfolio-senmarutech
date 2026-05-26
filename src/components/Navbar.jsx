@@ -1,6 +1,6 @@
-import { Code, Mail, Menu, X } from "lucide-react";
+import { Code, Menu, X } from "lucide-react";
 import { useState } from "react"
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -16,8 +16,8 @@ const Navbar = () => {
 
     const socialLinks = [
         {icon: <FaGithub className="h-5 w-5"/>, href: 'https://github.com/senmarutech', label: 'Github'},
-        {icon: <FaLinkedin className="h-5 w-5"/>, href: 'https://www.linkedin.com/in/ahmad-nur-rozik-9240a1299/', label: 'Github'},
-        {icon: <Mail className="h-5 w-5"/>, href: '#contact', label: 'Github'}
+        {icon: <FaLinkedin className="h-5 w-5"/>, href: 'https://www.linkedin.com/in/ahmad-nur-rozik-9240a1299/', label: 'LinkedIn'},
+        {icon: <FaInstagram className="h-5 w-5"/>, href: 'https://www.instagram.com/nuroziqahmad03', label: 'Instagram'}
     ];
 
   return (

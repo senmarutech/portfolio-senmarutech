@@ -40,13 +40,13 @@ const Projects = () => {
   return (
     <section id="projects" className="relative py-20 bg-blur-sm overflow-hidden">
         <div className="container relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-16"
+            <div className="text-center mb-8"
             data-aos="fade-up">
-                <h2 className="text-2xl md:text-4xl font-bold text-indigo-950 mb-4">
+                <h2 className="text-3xl md:text-5xl font-grotesk font-bold text-indigo-950 mb-4">
                     My<span className="text-transparent bg-clip-text bg-linear-to-r
                     from-blue-500 to-cyan-500"> Recent Project</span>
                 </h2>
-                <p className="text-indigo-950 font-medium text-base md:text-lg max-w-2xl mx-auto">
+                <p className="text-indigo-950 font-medium text-lg md:text-xl font-grotesk max-w-2xl mx-auto">
                     Developed responsive website with modern interface and optimized performance
                 </p>
             </div>

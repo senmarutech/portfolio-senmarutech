@@ -108,10 +108,10 @@ export default function About() {
                                         <img
                                         src={image.src}
                                         alt={image.alt}
-                                        className="w-full h-48 object-cover rounded-xl group-hover:scale-105
+                                        className="w-full h-full object-cover rounded-xl group-hover:scale-105
                                         transition-transform duration-300"/>
                                     </div>
-                                    <div className={`absolute -top-2 -right-2 text-white text-xs px-2 py-1
+                                    <div className={`absolute -top-2 -right-2 text-white text-xs px-4 py-1
                                     rounded-full font-semibold ${image.badgeColor}`}>
                                         {image.badge}
                                     </div>
@@ -134,12 +134,12 @@ export default function About() {
                 <div className="flex flex-col justify-center order-1 lg:order-2">
                     <div className="text-center lg:text-left"
                     data-aos="fade-left">
-                        <h2 className="text-white font-bold text-2xl md:text-4xl leading-tight">
+                        <h2 className="text-white font-bold font-grotesk text-3xl md:text-5xl leading-tight">
                             About <span className="text-transparent bg-clip-text
                             bg-linear-to-r from-blue-500 to-cyan-500">Me</span>
                         </h2>
-                        <p className="text-white font-medium text-base md:text-lg max-w-2xl mx-auto">
-                          Frontend Developer & <br />UI/UX Designer Enthusiast
+                        <p className="text-white font-medium text-base md:text-xl font-grotesk max-w-2xl mx-auto">
+                          Frontend Developer & UI/UX Designer Enthusiast
                         </p>
                     </div>
                     <p className="text-blue-100 pt-6 text-center lg:text-left text-sm md:text-base leading-relaxed"
@@ -163,11 +163,11 @@ export default function About() {
                         <div key={skill.id} className="flex flex-col">
                             <div className="flex items-center gap-3 mb-3">
                                 <Icon className={`w-5 h-5 md:w-6 md:h-6 ${skill.iconColor}`}/>
-                                <h3 className="text-sm md:text-base font-bold text-white">
+                                <h3 className="text-base md:text-lg font-bold text-white">
                                     {skill.title}
                                 </h3>
                             </div>
-                            <p className="text-blue-100 text-xs md:text-sm">
+                            <p className="text-blue-100 text-sm md:text-base">
                                 {skill.desc}
                             </p>
                         </div>
