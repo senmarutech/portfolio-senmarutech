@@ -12,20 +12,20 @@ const Projects = () => {
     const itemsPerPage = 3;
 
     const projects = [
-        {id:1, title: "Yasaro Website", category: 'Full Stack',
-            img: work1, tech: ['Tailwind CSS', 'Javascript', 'Laravel', 'Figma', 'MySQL'], github: "https://github.com/senmarutech",
+        {id:1, title: "Yasaro Website", category: 'Front End',
+            img: work1, tech: ['Tailwind CSS', 'Javascript', 'Figma'], github: "https://github.com/senmarutech/Company-Profile-Yasaro-Foundation",
             live: "https://yasarofoundation.com"},
         {id:2, title: "LumiSmile Website", category: 'Frontend',
-            img: work2, tech: ['Tailwind CSS', 'Javascript', 'Reactjs'], github: "https://github.com/senmarutech/LumiSMile-Website ",
+            img: work2, tech: ['Tailwind CSS', 'Javascript', 'Reactjs'], github: "https://github.com/senmarutech/LumiSMile-Website",
             live: "#"},
         {id:3, title: "LumiThesis Website", category: 'Frontend',
-            img: work3, tech: ['Tailwind CSS', 'Javascript', 'Reactjs', 'Framer Motion'], github: "https://github.com/senmarutech/",
+            img: work3, tech: ['Tailwind CSS', 'Javascript', 'Reactjs', 'Framer Motion'], github: "https://github.com/senmarutech/LumiThesis-Website",
             live: "#"},
         {id:4, title: "LumiNails Website", category: 'Frontend',
             img: work4, tech: ['Tailwind CSS', 'Javascript', 'Reactjs', 'Framer Motion'], github: "https://github.com/senmarutech/LumiNails-Website",
             live: "#"},
         {id:5, title: "LumiPets Website", category: 'Frontend',
-            img: work5, tech: ['Tailwind CSS', 'Javascript', 'Reactjs'], github: "https://github.com/senmarutech/",
+            img: work5, tech: ['Tailwind CSS', 'Javascript', 'Reactjs'], github: "https://github.com/senmarutech/LumiPets-Website",
             live: "#"}
     ];
 
