@@ -50,7 +50,7 @@ const experiences = [
   {
     id: 1,
     position: "UI/UX Designer",
-    company: "PT. Impactbyte Teknologi Edukasi Jakarta",
+    company: "PT. Impactbyte Teknologi Edukasi Jakarta (skilvul)",
     period: "2023 - 2024",
     desc: "Focused on creating modern and user-friendly interface designs, wireframing, prototyping, and improving user experience for web and mobile applications.",
     borderColor: "border-blue-500/30",
