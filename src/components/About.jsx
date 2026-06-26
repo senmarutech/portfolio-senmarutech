@@ -91,7 +91,7 @@ export default function About() {
     <section className="relative py-20 min-h-screen bg-indigo-950 flex items-center overflow-hidden" id="about">
         <div className="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-5xl lg:max-w-7xl mx-auto relative z-10">
             <div className="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
-                <div className="lg:h-full flex justify-center lg:justify-start order-2 lg:order-1">
+                <div className="lg:h-full flex justify-center lg:justify-start order-2 items-center lg:order-1">
                     <div className="relative w-full max-w-md">
                         <div
                         data-aos="zoom-in"
@@ -136,9 +136,8 @@ export default function About() {
                     <p className="text-white pt-6 text-center lg:text-left text-base md:text-lg leading-relaxed"
                     data-aos="fade-left"
                     data-aos-delay="200">
-                    Heyooo, My name is Ahmad Nur Rozik. I am graduate of Informatics in Nahdlatul Ulama Al Ghazali University, Cilacap. I am a Frontend Developer and UI/UX Designer Enthusiast
-                    who loves building modern, responsive, and user-friendly web 
-                    applications. I have experience in UI/UX design into functional web applications using modern
+                    Heyooo, My name is Ahmad Nur Rozik. I am graduate of Informatics in Nahdlatul Ulama Al Ghazali University, Cilacap. I am a Frontend Developer and UI/UX Designer
+                    who loves building modern, responsive, and user-friendly web applications. I have experience in UI/UX design into functional web applications using modern
                     technologies, ensuring optimal performance across devices and browsers. I am also familiar with managing
                     code efficiently, collaborating with teams, and continuously improving user experience through clean and
                     maintainable code.
