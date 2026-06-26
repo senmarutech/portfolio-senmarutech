@@ -50,8 +50,8 @@ const Projects = () => {
                     My<span className="text-transparent bg-clip-text bg-linear-to-r
                     from-blue-500 to-cyan-500"> Recent Project</span>
                 </h2>
-                <p className="text-indigo-950 font-medium text-lg md:text-xl font-grotesk max-w-2xl mx-auto">
-                    Developed responsive website with modern interface and optimized performance
+                <p className="text-indigo-950 font-medium text-lg md:text-2xl font-grotesk max-w-2xl mx-auto">
+                    Developed responsive website with modern interface
                 </p>
             </div>
             <div className="flex justify-end gap-4 mb-6">
@@ -112,7 +112,7 @@ const Projects = () => {
                                     </span>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-lg md:text-xl font-bold mb-2 text-indigo-950">
+                                    <h3 className="text-xl md:text-2xl font-bold mb-2 text-indigo-950">
                                         {project.title}
                                     </h3>
                                     <div className="flex flex-wrap gap-2">

@@ -61,28 +61,28 @@ const skills = [
     icon: CodeBracketSquareIcon,
     iconColor: "text-blue-400",
     title: "Frontend",
-    desc: "Tailwind CSS, Javascript, React js, Vue js"
+    desc: "HTML, CSS, Tailwind CSS, Javascript, React js, Vite, Git"
   },
   {
     id: 2,
     icon: SpeakerWaveIcon,
     iconColor: "text-blue-400",
     title: "Languages",
-    desc: "Bahasa, English"
+    desc: "Bahasa Indonesia, English"
   },
   {
     id: 3,
     icon: PaintBrushIcon,
     iconColor: "text-blue-400",
     title: "Design",
-    desc: "UI/UX Design, Prototyping, Graphic Design"
+    desc: "UI Design, Wireframe, UX Research, Prototyping, Graphic Design"
   },
   {
     id: 4,
     icon: CubeIcon,
     iconColor: "text-blue-400",
     title: "Tools",
-    desc: "VSCode, Figma, Photoshop, Canva"
+    desc: "VS Code, Figma, Photoshop, Canva, Plerdy, Miro"
   }
 ];
 
@@ -118,15 +118,6 @@ export default function About() {
                                 </div>
                             ))}
                             </div>
-                            <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 z-20
-                            bg-linear-to-r from-blue-500 to-cyan-500 rounded-2xl px-6 py-3 border border-blue-400/40
-                            shadow-xl"
-                            data-aos="fade-up"
-                            data-aos-delay="600">
-                                <div className="text-center text-white text-base md:text-xl font-bold">
-                                    1+ Years Experience
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -138,11 +129,11 @@ export default function About() {
                             About <span className="text-transparent bg-clip-text
                             bg-linear-to-r from-blue-500 to-cyan-500">Me</span>
                         </h2>
-                        <p className="text-white font-medium text-base md:text-xl font-grotesk max-w-2xl mx-auto">
-                          Frontend Developer & UI/UX Designer Enthusiast
+                        <p className="text-white font-medium text-lg md:text-2xl font-grotesk max-w-2xl mx-auto">
+                          Frontend Developer & UI/UX Designer
                         </p>
                     </div>
-                    <p className="text-blue-100 pt-6 text-center lg:text-left text-sm md:text-base leading-relaxed"
+                    <p className="text-white pt-6 text-center lg:text-left text-base md:text-lg leading-relaxed"
                     data-aos="fade-left"
                     data-aos-delay="200">
                     Heyooo, My name is Ahmad Nur Rozik. I am graduate of Informatics in Nahdlatul Ulama Al Ghazali University, Cilacap. I am a Frontend Developer and UI/UX Designer Enthusiast
@@ -163,11 +154,11 @@ export default function About() {
                         <div key={skill.id} className="flex flex-col">
                             <div className="flex items-center gap-3 mb-3">
                                 <Icon className={`w-5 h-5 md:w-6 md:h-6 ${skill.iconColor}`}/>
-                                <h3 className="text-base md:text-lg font-bold text-white">
+                                <h3 className="text-lg md:text-xl font-semibold text-white">
                                     {skill.title}
                                 </h3>
                             </div>
-                            <p className="text-blue-100 text-sm md:text-base">
+                            <p className="text-white text-base md:text-lg">
                                 {skill.desc}
                             </p>
                         </div>
@@ -178,18 +169,17 @@ export default function About() {
                     <div className="flex gap-4 pt-8 flex-col sm:flex-row"
                     data-aos="fade-up"
                     data-aos-delay="400">
-                      <a href="#projects" className="px-8 md:px-10 py-4 rounded-xl font-semibold
-                      transition-all duration-300 flex items-center text-sm md:text-base justify-center
+                      <a href="#projects" className="px-8 md:px-10 py-4 rounded-full font-semibold
+                      transition-all duration-300 flex items-center text-base md:text-lg justify-center
                       bg-linear-to-r from-blue-600 to-cyan-600 text-white
                       hover:from-blue-500 hover:to-cyan-500 group cursor-pointer">
                         View Project
                         <ArrowRightIcon className="w-4 h-4 md:w-5 md:h-5 ml-2 group-hover:translate-x-1 transition-transform"/>
                       </a>
-                      <a href="#contact" className="px-8 md:px-10 py-4 rounded-xl font-semibold
+                      <a href="#contact" className="px-8 md:px-10 py-4 rounded-full font-semibold
                       transition-all duration-300 flex items-center text-sm md:text-base justify-center
-                      border border-blue-400 text-blue-400
-                      hover:bg-blue-400/10 cursor-pointer">
-                        <ChatBubbleLeftRightIcon className="w-4 h-4 md:w-5 md:h-5 mr-2" />
+                      border-2 border-blue-400 text-blue-400 hover:bg-blue-400/10 cursor-pointer">
+                        <ChatBubbleLeftRightIcon className="w-4 h-4 md:w-5 md:h-5 mr-2 text-blue-400" />
                         Contact Me
                       </a>
                     </div>

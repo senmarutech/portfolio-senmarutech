@@ -10,7 +10,7 @@ import {
 const skills = [
   {
     id: 1,
-    title: "Frontend Development",
+    title: "Frontend",
     icon: CodeBracketIcon,
     iconColor: "text-blue-400",
     percentage: 90,
@@ -19,7 +19,7 @@ const skills = [
   },
   {
     id: 2,
-    title: "Language",
+    title: "English",
     icon: SpeakerWaveIcon,
     iconColor: "text-blue-400",
     percentage: 80,
@@ -37,7 +37,7 @@ const skills = [
   },
   {
     id: 4,
-    title: "Website Development",
+    title: "Web Development",
     icon: DevicePhoneMobileIcon,
     iconColor: "text-blue-400",
     percentage: 80,
@@ -49,7 +49,7 @@ const skills = [
 const experiences = [
   {
     id: 1,
-    position: "UI/UX Designer",
+    position: "Internship UI/UX Designer",
     company: "PT. Impactbyte Teknologi Edukasi Jakarta (skilvul)",
     period: "2023 - 2024",
     desc: "Focused on creating modern and user-friendly interface designs, wireframing, prototyping, and improving user experience for web and mobile applications.",
@@ -60,7 +60,7 @@ const experiences = [
   },
   {
     id: 2,
-    position: "Admin Operating of CBT System",
+    position: "Work Administrative Staff",
     company: "Yasaro Foundation Cilacap",
     period: "2024 - Present",
     desc: "Managed and input exam questions into the CBT system and ensured the smooth execution of TOEFL examinations. Assisted participants with technical or procedural issues during the exam while providing excellent customer service to maintain an organized testing experience.",
@@ -71,9 +71,9 @@ const experiences = [
   },
   {
     id: 3,
-    position: "Tutor English",
+    position: "Internship English Tutor",
     company: "English Stars Academy Cilacap",
-    period: "2024 - Present",
+    period: "2024 - 2026",
     desc: "Explaining grammar, vocabulary, speaking, and listening materials in a communicative and easy to understand manner.",
     borderColor: "border-blue-500/30",
     dotColor: "bg-blue-500",
@@ -83,9 +83,13 @@ const experiences = [
 ];
 
 const techStack = [
-  "Tailwind CSS",
-  "Vue js",
-  "React js",
+  "HTML",
+  "CSS",
+  "Tailwind CSS V4",
+  "Javascript",
+  "Vuejs",
+  "Reactjs",
+  "Vite",
   "SQL",
   "Figma",
   "Photoshop",
@@ -105,7 +109,7 @@ export default function Skills() {
                     Skills<span className="text-transparent bg-clip-text bg-linear-to-r
                     from-blue-500 to-cyan-500"> & Experience</span>
                 </h2>
-                <p className="text-indigo-950 font-medium text-base md:text-xl max-w-2xl mx-auto">
+                <p className="text-indigo-950 font-medium text-lg md:text-2xl max-w-2xl mx-auto">
                     My technical expertise and professional journey
                 </p>
             </div>
@@ -125,7 +129,7 @@ export default function Skills() {
                         className="group">
                             <div className="flex items-center justify-between mb-3 ">
                                 <span className="text-indigo-950 font-bold
-                                flex items-center text-sm md:text-base gap-2">
+                                flex items-center text-base md:text-lg gap-2">
                                     <Icon className={`w-4 h-4 md:w-5 md:h-5 ${skill.iconColor}`}/>
                                     {skill.title}
                                 </span>
@@ -161,7 +165,7 @@ export default function Skills() {
                             className="px-4 py-2 bg-linear-to-r from-blue-600 to-cyan-600
                             hover:from-blue-500 hover:to-cyan-500
                             border border-blue-400/30 rounded-full text-white
-                            text-xs md:text-sm font-medium hover:scale-105 transition-transform
+                            text-sm md:text-base font-medium hover:scale-105 transition-transform
                             duration-300">
                                 {tech}
                             </span>
@@ -190,17 +194,17 @@ export default function Skills() {
                                     ${exp.borderClass}`}>
                                     <div className="flex flex-col sm:flex-row sm:items-center
                                     sm:justify-between mb-3">
-                                        <h4 className="text-base md:text-lg font-bold text-indigo-950">
+                                        <h4 className="text-lg md:text-xl font-semibold text-indigo-950">
                                             {exp.position}
                                         </h4>
                                         <span className={`${exp.dateColor}mt-1 sm:mt-0`}>
                                             {exp.period}
                                         </span>
                                     </div>
-                                    <p className='text-indigo-950 text-sm md:text-base font-medium mb-3'>
+                                    <p className='text-indigo-950 text-base md:text-lg font-medium mb-3'>
                                         {exp.company}
                                     </p>
-                                    <p className="text-indigo-950 text-xs md:text-sm leading-relaxed">
+                                    <p className="text-indigo-950 text-base md:text-lg leading-relaxed">
                                         {exp.desc}
                                     </p>
                                 </div>

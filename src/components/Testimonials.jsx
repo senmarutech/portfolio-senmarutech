@@ -46,8 +46,8 @@ const Testimonials = () => {
                     What<span className="text-transparent bg-clip-text bg-linear-to-r
                     from-blue-500 to-cyan-500"> Clients Say ?</span>
                 </h2>
-                <p className="text-indigo-950 font-medium text-lg md:text-xl font-grotesk max-w-2xl mx-auto">
-                    Clients appreciate clean design, responsive features and excellent performance.
+                <p className="text-indigo-950 font-medium text-lg md:text-2xl font-grotesk max-w-2xl mx-auto">
+                    Clients appreciate clean design and excellent performance.
                 </p>
             </div>
             <div className="relative max-w-4xl mx-auto">
@@ -67,7 +67,7 @@ const Testimonials = () => {
                             <div className="bg-white rounded-2xl shadow-2xl p-8 md:p-10
                             border border-slate-200">
                                 <FaQuoteLeft className="text-blue-500 mb-6"/>
-                                <p className="text-lg md:text-xl text-indigo-950 mb-8
+                                <p className="text-base md:text-xl text-indigo-950 mb-8
                                 leading-relaxed">
                                     {testimonials[currentIndex].content}
                                 </p>

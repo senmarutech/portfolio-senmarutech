@@ -15,9 +15,9 @@ const Navbar = () => {
     ];
 
     const socialLinks = [
-        {icon: <FaGithub className="h-5 w-5"/>, href: 'https://github.com/senmarutech', label: 'Github'},
-        {icon: <FaLinkedin className="h-5 w-5"/>, href: 'https://www.linkedin.com/in/ahmad-nur-rozik-9240a1299/', label: 'LinkedIn'},
-        {icon: <FaInstagram className="h-5 w-5"/>, href: 'https://www.instagram.com/nuroziqahmad03', label: 'Instagram'}
+        {icon: <FaGithub className="h-6 w-6"/>, href: 'https://github.com/senmarutech', label: 'Github'},
+        {icon: <FaLinkedin className="h-6 w-6"/>, href: 'https://www.linkedin.com/in/ahmad-nur-rozik-9240a1299/', label: 'LinkedIn'},
+        {icon: <FaInstagram className="h-6 w-6"/>, href: 'https://www.instagram.com/nuroziqahmad03', label: 'Instagram'}
     ];
 
   return (
@@ -30,7 +30,7 @@ const Navbar = () => {
                 data-aos='fade-right'
                 data-aos-delay='200'>
                     <Code className="h-6 w-6 text-gray-800"/>
-                    <span className="ml-2 text-lg font-semibold text-gray-900">
+                    <span className="ml-2 text-xl lg:text-2xl font-semibold text-gray-900">
                         Portfolio
                     </span>
                 </div>
@@ -39,7 +39,7 @@ const Navbar = () => {
                         <a 
                         key={item.name}
                         href={item.href}
-                        className="text-indigo-950 hover:text-blue-600 text-sm font-medium
+                        className="text-indigo-950 hover:text-blue-600 text-xl font-medium
                         transition-colors duration-200"
                         data-aos='fade-down'
                         data-aos-delay={300 + (index * 50)}>
@@ -85,7 +85,7 @@ const Navbar = () => {
                             key={item.name}
                             href={item.href}
                             className="text-indigo-950 hover:text-blue-600 py-2 px-3
-                            text-sm font-medium transition-colors duration-200 rounded-md
+                            text-base font-medium transition-colors duration-200 rounded-md
                             hover:bg-gray-100"
                             onClick={() => setIsMenuOpen(false)}
                             data-aos='fade-up'
