@@ -204,7 +204,7 @@ export default function Skills() {
                                     <p className='text-indigo-950 text-base md:text-lg font-medium mb-3'>
                                         {exp.company}
                                     </p>
-                                    <p className="text-indigo-950 text-base md:text-lg leading-relaxed">
+                                    <p className="text-indigo-950 text-base text-justify md:text-lg leading-relaxed">
                                         {exp.desc}
                                     </p>
                                 </div>

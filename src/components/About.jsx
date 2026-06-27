@@ -134,7 +134,7 @@ export default function About() {
                           Frontend Developer & UI/UX Designer
                         </p>
                     </div>
-                    <p className="text-white pt-6 text-center lg:text-left text-base md:text-lg leading-relaxed"
+                    <p className="text-white text-justify pt-6 text-base md:text-lg leading-relaxed"
                     data-aos="fade-left"
                     data-aos-delay="200">
                     Heyooo, My name is Ahmad Nur Rozik. I am graduate of Informatics in Nahdlatul Ulama Al Ghazali University, Cilacap. I am a Frontend Developer and UI/UX Designer

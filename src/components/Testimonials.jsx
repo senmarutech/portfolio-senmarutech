@@ -68,7 +68,7 @@ const Testimonials = () => {
                                 <div className="bg-white rounded-2xl md:rounded-4xl shadow-2xl p-8 md:p-10
                                 border border-slate-200">
                                     <FaQuoteLeft className="text-blue-500 mb-6"/>
-                                    <p className="text-base md:text-xl text-indigo-950 mb-4
+                                    <p className="text-base text-justify md:text-xl text-indigo-950 mb-4
                                     leading-relaxed">
                                         {testimonials[currentIndex].content}
                                     </p>

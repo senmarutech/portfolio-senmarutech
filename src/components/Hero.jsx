@@ -52,7 +52,7 @@ const Hero = () => {
                         Frontend Developer & UI/UX Designer
                     </p>
                 </div>
-                <p className="text-indigo-950 pt-6 text-left
+                <p className="text-indigo-950 pt-6 text-justify
                 mx-auto max-w-xl text-base md:text-lg leading-relaxed"
                 data-aos="fade-right"
                 data-aos-delay="200">
