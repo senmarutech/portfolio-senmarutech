@@ -42,7 +42,7 @@ const Projects = () => {
             : prev - itemsPerPage);
     };
   return (
-    <section id="projects" className="relative py-20 bg-blur-sm overflow-hidden">
+    <section id="projects" className="relative py-20 bg-blur-sm overflow-hidden">  
         <div className="container relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8"
             data-aos="fade-up">
@@ -95,7 +95,7 @@ const Projects = () => {
                                         rel="noopener noreferrer"
                                         className="p-3 bg-white rounded-full text-indigo-950
                                         hover:text-blue-600 transition-colors">
-                                            <FaGithub size={24}/>
+                                            <FaGithub className="text-base md:text-xl"/>
                                         </a>
                                         {/* Website */}
                                         <a
@@ -103,7 +103,7 @@ const Projects = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="p-3 bg-white rounded-full text-indigo-950 hover:text-blue-600 transition-colors">
-                                            <FaExternalLinkAlt size={20}/>
+                                            <FaExternalLinkAlt className="text-base md:text-xl"/>
                                         </a>
                                     </div>
                                     <span className="absolute top-4 left-4 px-3 py-1 bg-white/50 backdrop-blur-sm

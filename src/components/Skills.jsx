@@ -1,7 +1,7 @@
 import {
   BriefcaseIcon,
   CodeBracketIcon,
-  DevicePhoneMobileIcon,
+  ComputerDesktopIcon,
   PaintBrushIcon,
   SpeakerWaveIcon,
   Squares2X2Icon,
@@ -38,7 +38,7 @@ const skills = [
   {
     id: 4,
     title: "Web Development",
-    icon: DevicePhoneMobileIcon,
+    icon: ComputerDesktopIcon,
     iconColor: "text-blue-400",
     percentage: 80,
     percentageColor: "text-cyan-500 text-xs md:text-sm",

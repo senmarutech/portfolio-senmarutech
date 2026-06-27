@@ -88,7 +88,8 @@ const skills = [
 
 export default function About() {
   return (
-    <section className="relative py-20 min-h-screen bg-indigo-950 flex items-center overflow-hidden" id="about">
+    <section className="relative py-20 min-h-screen flex items-center overflow-hidden" id="about">
+      <div className="bg-indigo-950 pr-2 pl-2 pt-8 pb-8 m-4 md:m-8 rounded-3xl md:rounded-4xl">
         <div className="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-5xl lg:max-w-7xl mx-auto relative z-10">
             <div className="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
                 <div className="lg:h-full flex justify-center lg:justify-start order-2 items-center lg:order-1">
@@ -185,6 +186,7 @@ export default function About() {
                 </div>
             </div>
         </div>
+      </div>
     </section>
   );
 }
