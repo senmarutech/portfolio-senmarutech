@@ -31,10 +31,12 @@ const Hero = () => {
             <div className="flex flex-col md:mt-0 mt-20 justify-center">
                 <div className="lg:text-left">
                     <div className="inline-flex items-center gap-2 px-3 py-1 md:px-4 md:py-2 rounded-full
-                    bg-blue-500 backdrop-blur-sm mb-4">
+                    bg-blue-500 backdrop-blur-sm mb-4"
+                    data-aos="fade-right"
+                    data-aos-delay="50">
                         <FaCircle className="w-2 h-2 text-white animate-pulse"/>
                         <span className="text-white text-sm md:text-base font-semibold">
-                            Yaps, That's Me.
+                            Available to Work
                         </span>
                     </div>
                     <h1 className="text-transparent bg-clip-text bg-linear-to-r 

@@ -82,7 +82,7 @@ const Testimonials = () => {
                                         <FaUserCircle className="text-white" size={40}/>
                                     </div>
                                     <div>
-                                        <h4 className="font-bold text-base md:text-lg text-indigo-950">
+                                        <h4 className="font-semibold text-lg md:text-xl text-indigo-950">
                                             {testimonials[currentIndex].name}
                                         </h4>
                                         <p className="text-blue-500 text-sm md:text-base">
