@@ -147,16 +147,7 @@ const Testimonials = () => {
                                 ${index === currentIndex
                                     ? 'w-10 bg-linear-to-r from-blue-500 to-cyan-500'
                                     : 'w-3 bg-slate-300'
-                                }`}
-                                whileHover={{ scale: 1.2 }}
-                                whileTap={{ scale: 0.9 }}
-                                animate={index === currentIndex ? {
-                                    boxShadow: [
-                                        "0 0 5px rgba(6, 182, 212, 0.3)",
-                                        "0 0 15px rgba(6, 182, 212, 0.6)",
-                                        "0 0 5px rgba(6, 182, 212, 0.3)",
-                                    ]} : {}}
-                                    transition={{ duration: 2, repeat: index === currentIndex ? Infinity : 0 }}>
+                                }`}>
                             </motion.div>
                         ))}
                     </div>
