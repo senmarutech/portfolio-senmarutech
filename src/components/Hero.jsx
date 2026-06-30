@@ -44,8 +44,7 @@ const Hero = () => {
                     text-left text-3xl md:text-5xl font-sf-display leading-tight"
                     data-aos="fade-right"
                     data-aos-delay="100"> 
-                        I'M SENMARU<span className='bg-linear-to-r from-blue-500 to-cyan-500
-                        text-white p-2'>TECH.</span>
+                        I'M SENMARUTECH.
                     </h1>
                 </div>
                 <div className='space-y-3 pt-4 pb-4'>

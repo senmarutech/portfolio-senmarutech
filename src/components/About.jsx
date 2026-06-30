@@ -62,7 +62,7 @@ const skills = [
     icon: CodeBracketSquareIcon,
     iconColor: "text-blue-400",
     title: "Frontend",
-    desc: "HTML, CSS, Tailwind CSS, Javascript, React js, Vite, Git"
+    desc: "HTML, CSS, Tailwind CSS, Javascript, Vite, Reactjs, Git"
   },
   {
     id: 2,
@@ -151,8 +151,8 @@ export default function About() {
                       <p className="text-white  font-sf-text text-justify text-base md:text-lg leading-relaxed"
                       data-aos="fade-left"
                       data-aos-delay="300">
-                        I am passionate about building responsive, user-friendly, and visually appealing web applications. 
-                        With a strong foundation in UI/UX principles and modern frontend technologies, i enjoy transforming 
+                        I am passionate about building responsive, user friendly, and visually appealing web applications. 
+                        With strong foundation in UI/UX principles and modern frontend technologies, i enjoy transforming 
                         designs into functional and engaging digital experiences.
                       </p>
                       <p className="text-white  font-sf-text text-justify text-base md:text-lg leading-relaxed"
@@ -195,7 +195,7 @@ export default function About() {
                         <ArrowRightIcon className="w-4 h-4 md:w-5 md:h-5 ml-2 group-hover:translate-x-1 transition-transform"/>
                       </a>
                       <a href="#contact" className="px-8 md:px-10 py-4 font-sf-display rounded-full font-semibold
-                      transition-all duration-300 flex items-center text-sm md:text-base justify-center
+                      transition-all duration-300 flex items-center text-base md:text-lg justify-center
                       border-2 border-blue-400 text-blue-400 hover:bg-blue-400/10 cursor-pointer">
                         <ChatBubbleLeftRightIcon className="w-4 h-4 md:w-5 md:h-5 mr-2 text-blue-400" />
                         Contact Me

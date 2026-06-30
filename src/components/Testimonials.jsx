@@ -72,7 +72,7 @@ const Testimonials = () => {
                             animate="center"
                             exit="exit"
                             className="absolute w-full">
-                                <div className="bg-white rounded-2xl md:rounded-4xl shadow-2xl p-8 md:p-10
+                                <div className="bg-white rounded-2xl md:rounded-4xl shadow-2xl p-6 md:p-10
                                 border border-slate-200">
                                     <FaQuoteLeft className="text-blue-500 mb-6"/>
                                     <p className="text-base font-sf-text text-justify md:text-xl text-indigo-950 mb-4
