@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react"
 import { AnimatePresence, motion } from 'framer-motion';
-import { FaChevronLeft, FaChevronRight, FaQuoteLeft, FaStar, FaUserCircle } from "react-icons/fa";
+import { FaChevronLeft, FaChevronRight, FaCircle, FaQuoteLeft, FaStar, FaUserCircle } from "react-icons/fa";
 
 const Testimonials = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
@@ -43,11 +43,18 @@ const Testimonials = () => {
             <div className="container mx-auto px-4">
                 <div className="text-center mb-16"
                 data-aos="fade-up">
-                    <h2 className="text-3xl md:text-5xl font-bold text-white mb-4">
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full
+                    bg-blue-500 backdrop-blur-sm mb-4">
+                        <FaCircle className="w-2 h-2 text-white animate-pulse"/>
+                        <span className="text-white text-xs md:text-sm font-sf-display font-semibold">
+                            Testimonials.
+                        </span>
+                    </div>
+                    <h2 className="text-3xl md:text-5xl font-bold font-sf-display text-white mb-4">
                         What<span className="text-transparent bg-clip-text bg-linear-to-r
                         from-blue-500 to-cyan-500"> Clients Say ?</span>
                     </h2>
-                    <p className="text-white font-medium text-lg md:text-2xl max-w-2xl mx-auto">
+                    <p className="text-white font-normal font-sf-display text-lg md:text-2xl max-w-2xl mx-auto">
                         Clients appreciate clean design and excellent performance.
                     </p>
                 </div>
@@ -68,7 +75,7 @@ const Testimonials = () => {
                                 <div className="bg-white rounded-2xl md:rounded-4xl shadow-2xl p-8 md:p-10
                                 border border-slate-200">
                                     <FaQuoteLeft className="text-blue-500 mb-6"/>
-                                    <p className="text-base text-justify md:text-xl text-indigo-950 mb-4
+                                    <p className="text-base font-sf-text text-justify md:text-xl text-indigo-950 mb-4
                                     leading-relaxed">
                                         {testimonials[currentIndex].content}
                                     </p>
@@ -83,10 +90,10 @@ const Testimonials = () => {
                                             <FaUserCircle className="text-white text-xl md:text-4xl"/>
                                         </div>
                                         <div>
-                                            <h4 className="font-semibold text-sm md:text-2xl text-indigo-950">
+                                            <h4 className="font-medium font-sf-display text-sm md:text-2xl text-indigo-950">
                                                 {testimonials[currentIndex].name}
                                             </h4>
-                                            <p className="text-blue-500 text-sm md:text-lg">
+                                            <p className="text-blue-500 font-thin font-sf-text text-sm md:text-lg">
                                                 {testimonials[currentIndex].role}
                                             </p>
                                         </div>

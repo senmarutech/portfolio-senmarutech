@@ -10,13 +10,13 @@ const Footer = () => {
                 <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity:1, y: 0 }}
-                className='text-white text-sm'>
+                className='text-white font-sf-text text-sm'>
                     @{currentYear} senmarutech. All rights reserved.
                 </motion.div>
                 <motion.div
                 initial={{ opacity: 0, y: 10 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                className='text-white text-sm items-center gap-1'>
+                className='text-white font-sf-text text-sm items-center gap-1'>
                     Made by senmarutech
                 </motion.div>
 

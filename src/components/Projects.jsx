@@ -4,7 +4,7 @@ import work2 from '../assets/work2.png'
 import work3 from '../assets/work3.png'
 import work4 from '../assets/work4.png'
 import work5 from '../assets/work5.png'
-import { FaChevronLeft, FaChevronRight, FaExternalLinkAlt, FaGithub } from "react-icons/fa"
+import { FaChevronLeft, FaChevronRight, FaCircle, FaExternalLinkAlt, FaGithub } from "react-icons/fa"
 import { motion } from 'framer-motion';
 
 const Projects = () => {
@@ -46,11 +46,18 @@ const Projects = () => {
         <div className="container relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-8"
             data-aos="fade-up">
-                <h2 className="text-3xl md:text-5xl font-grotesk font-bold text-indigo-950 mb-4">
-                    My<span className="text-transparent bg-clip-text bg-linear-to-r
-                    from-blue-500 to-cyan-500"> Recent Project</span>
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full
+                bg-blue-500 backdrop-blur-sm mb-4">
+                    <FaCircle className="w-2 h-2 text-white animate-pulse"/>
+                    <span className="text-white text-xs md:text-sm font-sf-display font-semibold">
+                        Build digital solutions.
+                    </span>
+                </div>
+                <h2 className="text-3xl md:text-5xl font-sf-display font-bold text-indigo-950 mb-4">
+                    Recently<span className="text-transparent bg-clip-text bg-linear-to-r
+                    from-blue-500 to-cyan-500"> Project</span>
                 </h2>
-                <p className="text-indigo-950 font-medium text-lg md:text-2xl font-grotesk max-w-2xl mx-auto">
+                <p className="text-indigo-950 font-sf-display font-normal text-lg md:text-2xl max-w-2xl mx-auto">
                     Developed responsive website with modern interface
                 </p>
             </div>
@@ -107,19 +114,19 @@ const Projects = () => {
                                         </a>
                                     </div>
                                     <span className="absolute top-4 left-4 px-3 py-1 bg-white/50 backdrop-blur-sm
-                                    rounded-full text-xs md:text-sm font-semibold text-white">
+                                    rounded-full text-xs md:text-sm font-sf-text font-thin text-white">
                                         {project.category}
                                     </span>
                                 </div>
                                 <div className="p-6">
-                                    <h3 className="text-xl md:text-2xl font-bold mb-2 text-indigo-950">
+                                    <h3 className="text-xl md:text-2xl font-sf-display font-semibold mb-2 text-indigo-950">
                                         {project.title}
                                     </h3>
                                     <div className="flex flex-wrap gap-2">
                                         {project.tech.map((t, i) => (
                                             <span
                                             key={i}
-                                            className="px-2 py-1 text-xs md:text-sm rounded-full bg-linear-to-r from-blue-600 to-cyan-600
+                                            className="px-2 py-1 md:px-2.5 md:py-1.5 text-xs md:text-sm font-sf-text rounded-full bg-linear-to-r from-blue-600 to-cyan-600
                                             hover:from-blue-500 hover:to-cyan-500
                                             border border-blue-400/30
                                             text-white">

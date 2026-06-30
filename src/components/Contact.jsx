@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaPaperPlane } from 'react-icons/fa';
+import { FaCircle, FaPaperPlane } from 'react-icons/fa';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -22,11 +22,18 @@ const Contact = () => {
         <div className='relative z-10 container mx-auto px-4 sm:px-6 lg:px-8'>
             <div className="text-center mb-16"
             data-aos="fade-up">
-                <h2 className="text-3xl md:text-5xl font-grotesk font-bold text-indigo-950 mb-4">
-                    Contact<span className="text-transparent bg-clip-text bg-linear-to-r
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full
+                bg-blue-500 backdrop-blur-sm mb-4">
+                    <FaCircle className="w-2 h-2 text-white animate-pulse"/>
+                    <span className="text-white text-xs md:text-sm font-sf-display font-semibold">
+                        Lets Talk.
+                    </span>
+                </div>
+                <h2 className="text-3xl md:text-5xl font-sf-display font-bold text-indigo-950 mb-4">
+                    Contact<span className="text-transparent  bg-clip-text bg-linear-to-r
                     from-blue-500 to-cyan-500"> Me</span>
                 </h2>
-                <p className="text-indigo-950 text-lg md:text-2xl font-grotesk max-w-2xl mx-auto">
+                <p className="text-indigo-950 text-lg font-sf-display font-normal md:text-2xl max-w-2xl mx-auto">
                     Have a question or want to work together? Send me a message!
                 </p>
                 {/* Form */}
@@ -52,7 +59,7 @@ const Contact = () => {
                             placeholder='Your Name'
                             className='w-full px-4 py-2.5 bg-white/50
                             backdrop-blur-sm border border-slate-300 rounded-full
-                            text-base md:text-lg text-indigo-950 focus:ring-blue-500
+                            text-base md:text-lg font-sf-text text-indigo-950 focus:ring-blue-500
                             focus:outline-none focus:ring-2 focus:border-transparent
                             transition-all'/>
                         </div>
@@ -65,7 +72,7 @@ const Contact = () => {
                             placeholder='Email Address'
                             className='w-full px-4 py-2.5 bg-white/50
                             backdrop-blur-sm border border-slate-300 rounded-full
-                            text-base md:text-lg text-indigo-950 focus:ring-blue-500
+                            text-base md:text-lg font-sf-text text-indigo-950 focus:ring-blue-500
                             focus:outline-none focus:ring-2 focus:border-transparent
                             transition-all'/>
                         </div>
@@ -79,7 +86,7 @@ const Contact = () => {
                             placeholder='Your Message'
                             className='w-full px-4 py-2.5 bg-white/50
                             backdrop-blur-sm border border-slate-300 rounded-2xl
-                            text-base md:text-lg text-indigo-950 focus:ring-blue-500
+                            text-base md:text-lg font-sf-text text-indigo-950 focus:ring-blue-500
                             focus:outline-none focus:ring-2 focus:border-transparent
                             transition-all'/>
                         </div>
@@ -90,7 +97,7 @@ const Contact = () => {
                         whileTap={{ scale: 0.95 }}
                         className='w-full px-6 md:px-8 py-3 md:py-4 bg-linear-to-r
                         from-blue-500 to-cyan-500 text-white rounded-full font-semibold
-                        text-base md:text-lg shadow-lg hover:shadow-cyan-600/30 transition-all
+                        text-base md:text-lg shadow-lg font-sf-display hover:shadow-cyan-600/30 transition-all
                         duration-300 flex items-center justify-center gap-2 group'>
                             <span> Send Message </span>
                             <FaPaperPlane className='text-sm md:text-base group-hover:translate-x-1 transition-transform

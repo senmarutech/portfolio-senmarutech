@@ -21,7 +21,7 @@ const Navbar = () => {
     ];
 
   return (
-    <nav className="fixed w-full z-50 bg-white shadow-md">
+    <nav className="fixed w-full z-50 bg-white/50 backdrop-blur-sm shadow-md">
         <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
                 {/* Logo */}
@@ -30,16 +30,16 @@ const Navbar = () => {
                 data-aos='fade-right'
                 data-aos-delay='200'>
                     <Code className="h-6 w-6 text-gray-800"/>
-                    <span className="ml-2 text-xl lg:text-2xl font-semibold text-gray-900">
+                    <span className="ml-2 text-xl lg:text-2xl font-sf-display font-semibold text-gray-900">
                         Portfolio
                     </span>
                 </div>
-                <div className="hidden md:flex items-center space-x-8">
+                <div className="hidden md:flex font-sf-text items-center space-x-8">
                     {navItems.map((item, index) => (
                         <a 
                         key={item.name}
                         href={item.href}
-                        className="text-indigo-950 hover:text-blue-600 text-xl font-medium
+                        className="text-indigo-950 hover:text-blue-600 text-lg font-medium
                         transition-colors duration-200"
                         data-aos='fade-down'
                         data-aos-delay={300 + (index * 50)}>

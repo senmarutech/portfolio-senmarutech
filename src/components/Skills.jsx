@@ -5,7 +5,9 @@ import {
   PaintBrushIcon,
   SpeakerWaveIcon,
   Squares2X2Icon,
+  WrenchScrewdriverIcon
 } from "@heroicons/react/24/solid";
+import { FaCircle } from "react-icons/fa";
 
 const skills = [
   {
@@ -105,22 +107,35 @@ export default function Skills() {
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16"
             data-aos="fade-up">
-                <h2 className="text-3xl md:text-5xl font-grotesk font-bold text-indigo-950 mb-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full
+                bg-blue-500 backdrop-blur-sm mb-4">
+                    <FaCircle className="w-2 h-2 text-white animate-pulse"/>
+                    <span className="text-white text-xs md:text-sm font-sf-display font-semibold">
+                        Experienced.
+                    </span>
+                </div>
+                <h2 className="text-3xl md:text-5xl font-sf-display font-bold text-indigo-950 mb-4">
                     Skills<span className="text-transparent bg-clip-text bg-linear-to-r
                     from-blue-500 to-cyan-500"> & Experience</span>
                 </h2>
-                <p className="text-indigo-950 font-medium text-lg md:text-2xl max-w-2xl mx-auto">
+                <p className="text-indigo-950 font-sf-display font-normal text-lg md:text-2xl max-w-2xl mx-auto">
                     My technical expertise and professional journey
                 </p>
             </div>
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16">
-                <div data-aos="fade-right">
-                    <h3 className="text-xl md:text-2xl font-bold text-indigo-950 mb-8 flex
-                    items-center gap-3">
-                        Technical Skills
-                    </h3>
+                <div className="space-y-12">
                     {/* Percentase skills */}
-                    <div className="space-y-6 bg-white/50 rounded-2xl p-6 backdrop-blur-sm shadow-xl">
+                    <div className="bg-white/50 rounded-2xl p-6 backdrop-blur-sm shadow-xl"
+                    data-aos="fade-right"
+                    data-aos-delay="100">
+                        <div className="p-2">
+                            <h3 className="text-xl md:text-2xl font-sf-display font-bold mb-4 text-indigo-950 flex
+                            items-center gap-3">
+                                <WrenchScrewdriverIcon className="h-5 w-5 md:w-6 md:h-6 text-blue-400" />
+                                Technical Skills
+                        </h3>
+                        </div>
+                        <div className="space-y-6 p-2">
                         {skills.map((skill) => {
                             const Icon = skill.icon;
                             return (
@@ -128,7 +143,7 @@ export default function Skills() {
                         key={skill.id}
                         className="group">
                             <div className="flex items-center justify-between mb-3 ">
-                                <span className="text-indigo-950 font-bold
+                                <span className="text-indigo-950 font-sf-text font-normal
                                 flex items-center text-base md:text-lg gap-2">
                                     <Icon className={`w-4 h-4 md:w-5 md:h-5 ${skill.iconColor}`}/>
                                     {skill.title}
@@ -151,21 +166,26 @@ export default function Skills() {
                         );
                     })}
                     </div>
+                    </div>
                     {/* TECH STACK */}
-                    <div className="mt-12">
-                        <h3 className="text-xl md:text-2xl font-bold text-indigo-950 mb-8 flex
-                    items-center gap-3">
-                            <Squares2X2Icon className="h-5 w-5 md:w-6 md:h-6 text-blue-400" />
-                            Tech Stack
-                        </h3>
-                        <div className="flex flex-wrap gap-3 bg-white/50 rounded-2xl p-6 shadow-xl backdrop-blur-sm">
+                    <div className=" bg-white/50 rounded-2xl mt-12 p-6 backdrop-blur-sm shadow-xl"
+                    data-aos="fade-right"
+                    data-aos-delay="200">
+                        <div className="p-2">
+                            <h3 className="text-xl md:text-2xl font-sf-display font-bold mb-4 text-indigo-950 flex
+                            items-center gap-3">
+                                <Squares2X2Icon className="h-5 w-5 md:w-6 md:h-6 text-blue-400" />
+                                    Tech Stack
+                            </h3>
+                        </div>
+                        <div className="flex flex-wrap gap-3 p-2">
                             {techStack.map((tech) => (
                             <span
                             key={tech}
                             className="px-4 py-2 bg-linear-to-r from-blue-600 to-cyan-600
                             hover:from-blue-500 hover:to-cyan-500
                             border border-blue-400/30 rounded-full text-white
-                            text-sm md:text-base font-medium hover:scale-105 transition-transform
+                            text-sm md:text-base font-normal font-sf-text hover:scale-105 transition-transform
                             duration-300">
                                 {tech}
                             </span>
@@ -173,38 +193,35 @@ export default function Skills() {
                         </div>
                     </div>
                 </div>
-                <div 
-                data-aos="fade-left">
-                    <h3 className="text-xl md:text-2xl font-bold text-indigo-950 mb-8 flex
-                    items-center gap-3">
+                {/* Tech Experience */}
+                <div className="bg-white/50 backdrop-blur-sm rounded-2xl p-6 shadow-xl"
+                data-aos="fade-right"
+                data-aos-delay="300">
+                    <h3 className="text-xl md:text-2xl font-bold text-indigo-950 mb-8 flex items-center gap-3">
                         <BriefcaseIcon className="w-5 h-5 md:w-6 md:h-6 text-blue-400" />
                         Experience
-                    </h3>
-                    <div className="space-y-8">
+                    </h3> 
+                    <div className="p-2 space-y-8">
                         {experiences.map((exp) => (
-                            <div
-                            key={exp.id}
-                            className={`relative pl-8 border-l-2 group
-                                ${exp.borderColor}`}>
-                                <div className={`absolute -left-2 top-0 w-4 h-4 rounded-full
-                                group-hover:scale-150 transition-transform duration-300
-                                    ${exp.dotColor}`}>
-                                </div>
-                                <div className={`bg-white/50 rounded-2xl p-6 backdrop-blur-sm shadow-xl
+                            <div key={exp.id} className={`relative pl-8 border-l-2 group 
+                            ${exp.borderColor}`}>
+                                <div className={`absolute -left-2.25 -top-1 w-4 h-4 rounded-full group-hover:scale-125 transition-transform duration-300 
+                                    ${exp.dotColor}`} />
+                                <div className={`space-y-3 
                                     ${exp.borderClass}`}>
-                                    <div className="flex flex-col sm:flex-row sm:items-center
-                                    sm:justify-between mb-3">
-                                        <h4 className="text-lg md:text-xl font-semibold text-indigo-950">
+                                    <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-4">
+                                        <h4 className="text-lg md:text-xl font-sf-display font-semibold text-indigo-950">
                                             {exp.position}
                                         </h4>
-                                        <span className={`${exp.dateColor}mt-1 sm:mt-0`}>
+                                        <span className={`text-sm md:text-base text-indigo-950 font-sf-text font-thin 
+                                            ${exp.dateColor}`}>
                                             {exp.period}
                                         </span>
                                     </div>
-                                    <p className='text-indigo-950 text-base md:text-lg font-medium mb-3'>
+                                    <p className="text-indigo-950 text-base font-sf-display md:text-lg font-medium">
                                         {exp.company}
                                     </p>
-                                    <p className="text-indigo-950 text-base text-justify md:text-lg leading-relaxed">
+                                    <p className="text-indigo-950/70 font-normal font-sf-text text-sm md:text-base text-justify leading-relaxed">
                                         {exp.desc}
                                     </p>
                                 </div>

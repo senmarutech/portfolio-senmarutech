@@ -11,6 +11,7 @@ import about1 from "../assets/about1.png";
 import about2 from "../assets/about2.png";
 import about3 from "../assets/about3.png";
 import about4 from "../assets/about4.png";
+import { FaCircle } from "react-icons/fa";
 
 const aboutImage = [
   {
@@ -91,8 +92,8 @@ export default function About() {
     <section className="relative py-20 min-h-screen flex items-center overflow-hidden" id="about">
       <div className="bg-indigo-950 pr-2 pl-2 pt-8 pb-8 m-4 md:m-8 rounded-3xl md:rounded-4xl">
         <div className="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-5xl lg:max-w-7xl mx-auto relative z-10">
-            <div className="grid lg:grid-cols-2 gap-10 xl:gap-14 items-center">
-                <div className="lg:h-full flex justify-center lg:justify-start order-2 items-center lg:order-1">
+            <div className="grid lg:grid-cols-2 gap-8 md:gap-12 items-center">
+                <div className="lg:h-full flex justify-center order-2 items-center lg:order-1">
                     <div className="relative w-full max-w-md">
                         <div
                         data-aos="zoom-in"
@@ -105,15 +106,15 @@ export default function About() {
                                 className="relative group"
                                 data-aos={image.animation}
                                 data-aos-delay={image.delay}>
-                                    <div className={`rounded-2xl p-2 border shadow-lg ${image.gradient}`}>
+                                    <div className={`rounded-2xl p-1 md:p-2 shadow-lg ${image.gradient}`}>
                                         <img
                                         src={image.src}
                                         alt={image.alt}
                                         className="w-full h-full object-cover rounded-xl group-hover:scale-105
                                         transition-transform duration-300"/>
                                     </div>
-                                    <div className={`absolute -top-2 -right-2 text-white text-xs px-4 py-1
-                                    rounded-full font-semibold ${image.badgeColor}`}>
+                                    <div className={`absolute -top-2 -right-2 text-white text-xs md:text-sm px-4 py-1
+                                    rounded-full font-sf-text font-semibold ${image.badgeColor}`}>
                                         {image.badge}
                                     </div>
                                 </div>
@@ -124,41 +125,58 @@ export default function About() {
                 </div>
                 {/* CONTENT SECTION */}
                 <div className="flex flex-col justify-center order-1 lg:order-2">
-                    <div className="text-center lg:text-left"
-                    data-aos="fade-left">
-                        <h2 className="text-white font-bold font-grotesk text-3xl md:text-5xl leading-tight">
+                    <div className="text-center lg:text-left">
+                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full
+                        bg-blue-500 backdrop-blur-sm mb-4"
+                        data-aos="fade-left"
+                        data-aos-delay="50">
+                          <FaCircle className="w-2 h-2 text-white animate-pulse"/>
+                          <span className="text-white font-sf-display text-xs md:text-sm font-semibold">
+                            Yoo! That's me.
+                          </span>
+                        </div>
+                        <h2 className="text-white font-sf-display font-bold text-3xl md:text-5xl leading-tight"
+                        data-aos="fade-left"
+                        data-aos-delay="100">
                             About <span className="text-transparent bg-clip-text
                             bg-linear-to-r from-blue-500 to-cyan-500">Me</span>
                         </h2>
-                        <p className="text-white font-medium text-lg md:text-2xl font-grotesk max-w-2xl mx-auto">
+                        <p className="text-white font-sf-display font-medium text-lg md:text-2xl max-w-2xl mx-auto"
+                        data-aos="fade-left"
+                        data-aos-delay="200">
                           Frontend Developer & UI/UX Designer
                         </p>
                     </div>
-                    <p className="text-white text-justify pt-6 text-base md:text-lg leading-relaxed"
-                    data-aos="fade-left"
-                    data-aos-delay="200">
-                    Heyooo, My name is Ahmad Nur Rozik. I am graduate of Informatics in Nahdlatul Ulama Al Ghazali University, Cilacap. I am a Frontend Developer and UI/UX Designer
-                    who loves building modern, responsive, and user-friendly web applications. I have experience in UI/UX design into functional web applications using modern
-                    technologies, ensuring optimal performance across devices and browsers. I am also familiar with managing
-                    code efficiently, collaborating with teams, and continuously improving user experience through clean and
-                    maintainable code.
-
-                    </p>
+                    <div className="space-y-2 pt-6 pb-6">
+                      <p className="text-white  font-sf-text text-justify text-base md:text-lg leading-relaxed"
+                      data-aos="fade-left"
+                      data-aos-delay="300">
+                        I am passionate about building responsive, user-friendly, and visually appealing web applications. 
+                        With a strong foundation in UI/UX principles and modern frontend technologies, i enjoy transforming 
+                        designs into functional and engaging digital experiences.
+                      </p>
+                      <p className="text-white  font-sf-text text-justify text-base md:text-lg leading-relaxed"
+                      data-aos="fade-left"
+                      data-aos-delay="400">
+                        I love every part of the journey, learning new things and gaining experiences that continuously 
+                        shape me into a better developer. Correct every mistake, then improve it to make it better day by day.
+                      </p>
+                    </div>
                     {/* SKILLS */}
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-8"
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-6"
                     data-aos="fade-up"
-                    data-aos-delay="300">
+                    data-aos-delay="400">
                         {skills.map((skill) => {
                             const Icon = skill.icon;
                             return (
                         <div key={skill.id} className="flex flex-col">
-                            <div className="flex items-center gap-3 mb-3">
+                            <div className="flex items-center gap-2 mb-3">
                                 <Icon className={`w-5 h-5 md:w-6 md:h-6 ${skill.iconColor}`}/>
-                                <h3 className="text-lg md:text-xl font-semibold text-white">
+                                <h3 className="text-lg md:text-xl font-sf-display font-medium text-white">
                                     {skill.title}
                                 </h3>
                             </div>
-                            <p className="text-white text-base md:text-lg">
+                            <p className="text-white font-sf-text text-sm md:text-base">
                                 {skill.desc}
                             </p>
                         </div>
@@ -172,11 +190,11 @@ export default function About() {
                       <a href="#projects" className="px-8 md:px-10 py-4 rounded-full font-semibold
                       transition-all duration-300 flex items-center text-base md:text-lg justify-center
                       bg-linear-to-r from-blue-600 to-cyan-600 text-white
-                      hover:from-blue-500 hover:to-cyan-500 group cursor-pointer">
+                      hover:from-blue-500 hover:to-cyan-500 group font-sf-display cursor-pointer">
                         View Project
                         <ArrowRightIcon className="w-4 h-4 md:w-5 md:h-5 ml-2 group-hover:translate-x-1 transition-transform"/>
                       </a>
-                      <a href="#contact" className="px-8 md:px-10 py-4 rounded-full font-semibold
+                      <a href="#contact" className="px-8 md:px-10 py-4 font-sf-display rounded-full font-semibold
                       transition-all duration-300 flex items-center text-sm md:text-base justify-center
                       border-2 border-blue-400 text-blue-400 hover:bg-blue-400/10 cursor-pointer">
                         <ChatBubbleLeftRightIcon className="w-4 h-4 md:w-5 md:h-5 mr-2 text-blue-400" />

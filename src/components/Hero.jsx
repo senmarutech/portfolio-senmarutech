@@ -28,38 +28,35 @@ const Hero = () => {
     lg:max-w-7xl mx-auto relative overflow-hidden z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14 md:py-20 flex flex-col lg:flex-row items-center
         gap-10 lg:gap-20">
-            <div className="flex flex-col md:mt-0 mt-20 justify-center">
+            <div className="flex flex-col md:mt-0 mt-10">
                 <div className="lg:text-left">
-                    <div className="inline-flex items-center gap-2 px-3 py-1 md:px-4 md:py-2 rounded-full
+                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full
                     bg-blue-500 backdrop-blur-sm mb-4"
                     data-aos="fade-right"
                     data-aos-delay="50">
                         <FaCircle className="w-2 h-2 text-white animate-pulse"/>
-                        <span className="text-white text-sm md:text-base font-semibold">
-                            Available to Work
+                        <span className="text-white font-sf-display text-xs md:text-sm font-semibold">
+                            Available For Freelance.
                         </span>
                     </div>
                     <h1 className="text-transparent bg-clip-text bg-linear-to-r 
-                    from-blue-500 to-cyan-500 font-grotesk font-bold
-                    text-left text-3xl md:text-5xl leading-tight"
+                    from-blue-500 to-cyan-500 font-bold
+                    text-left text-3xl md:text-5xl font-sf-display leading-tight"
                     data-aos="fade-right"
                     data-aos-delay="100"> 
-                        I'm senmarutech
+                        I'M SENMARU<span className='bg-linear-to-r from-blue-500 to-cyan-500
+                        text-white p-2'>TECH.</span>
                     </h1>
-                    <p className="text-indigo-950 font-medium font-grotesk text-left text-lg md:text-2xl mt-4"
+                </div>
+                <div className='space-y-3 pt-4 pb-4'>
+                    <p className="text-indigo-950/70 font-normal text-justify
+                    mx-auto max-w-xl text-base md:text-lg font-sf-text leading-relaxed"
                     data-aos="fade-right"
                     data-aos-delay="200">
-                        Frontend Developer & UI/UX Designer
+                        Yoo Tech Enthusiast! Call me Rozik. I am freshgraduate of Informatics in Nahdlatul Ulama Al Ghazali University. 
+                        I am a Frontend Developer and UI/UX Designer who loves building modern, responsive, and user friendly web applications.
                     </p>
                 </div>
-                <p className="text-indigo-950 pt-6 text-justify
-                mx-auto max-w-xl text-base md:text-lg leading-relaxed"
-                data-aos="fade-right"
-                data-aos-delay="200">
-                   I am a frontend developer who enjoys building clean and responsive websites. 
-                   I focus on creating simple and user friendly interfaces that work well across different devices. 
-                   I am always learning and improving my skills to deliver better results.
-                </p>
                 <div className="flex items-center gap-4 pt-8 flex-col sm:flex-row
                 sm:w-max sm:mx-auto lg:mx-0"
                 data-aos="fade-up"
@@ -72,7 +69,7 @@ const Hero = () => {
                 w-full sm:w-max flex justify-center overflow-hidden
                 bg-linear-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 transition-all
                 duration-300">
-                    <span className="relative flex items-center justify-center text-white
+                    <span className="relative flex items-center font-sf-display justify-center text-white
                     font-semibold text-base md:text-lg">
                         Contact Me
                     <ArrowRightIcon className="ml-2 w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1
@@ -90,7 +87,7 @@ const Hero = () => {
                     <ArrowDownTrayIcon
                     className="mr-2 w-4 h-4 md:w-5 md:h-5 text-blue-400 group-hover:translate-y-1
                     transition-transform"/>
-                    <span className="text-blue-400 font-semibold text-sm md:text-base">
+                    <span className="text-blue-400 font-sf-display font-semibold text-sm md:text-base">
                         Download CV
                     </span>
                 </div>
