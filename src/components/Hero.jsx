@@ -2,7 +2,7 @@ import { ArrowRightIcon, ArrowDownTrayIcon } from '@heroicons/react/24/outline';
 import hero from '../assets/hero1.png';
 import { motion } from 'framer-motion';
 import { FaReact, FaJsSquare, FaVuejs, FaHtml5, FaCss3Alt, FaCircle} from 'react-icons/fa';
-import { SiTailwindcss } from 'react-icons/si';
+import { SiGit, SiTailwindcss } from 'react-icons/si';
 
 const Hero = () => {
    const icons = [
@@ -11,7 +11,9 @@ const Hero = () => {
     {Icon: FaJsSquare, color: "#F7DF1E", delay: 2, size: 60},
     {Icon: FaHtml5, color: "#E34F26", delay: 3, size: 60},
     {Icon: SiTailwindcss, color: "#06B6D4", delay: 4, size: 60},
-    {Icon: FaVuejs, color: "#4FC08D", delay: 5, size: 60}
+    {Icon: FaVuejs, color: "#4FC08D", delay: 5, size: 60},
+    {Icon: SiGit, color: "#F1502F", delay: 6, size: 60},
+    
   ];
 
   const getPosition = (index, total) => {
@@ -56,41 +58,55 @@ const Hero = () => {
                         I am a Frontend Developer and UI/UX Designer who loves building modern, responsive, and user friendly web applications.
                     </p>
                 </div>
-                <div className="flex items-center gap-4 pt-8 flex-col sm:flex-row
+                <div className="flex items-center gap-4 pt-4 flex-col sm:flex-row
                 sm:w-max sm:mx-auto lg:mx-0"
                 data-aos="fade-up"
                 data-aos-delay="300">
-                <a 
-                href='https://wa.me/6282225596862' 
-                target='_blank' 
-                rel="noopener noreferrer" 
-                className="px-8 md:px-10 py-4 rounded-full relative group
-                w-full sm:w-max flex justify-center overflow-hidden
-                bg-linear-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 transition-all
-                duration-300">
-                    <span className="relative flex items-center font-sf-display justify-center text-white
-                    font-semibold text-base md:text-lg">
-                        Contact Me
-                    <ArrowRightIcon className="ml-2 w-4 h-4 md:w-5 md:h-5 group-hover:translate-x-1
-                    transition-transform"/>
-                    </span>
-                </a>
-                <a 
-                href="/cv.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="border-2 border-blue-400 px-8 md:px-10 py-4
-                rounded-full relative group w-full sm:w-max flex justify-center
-                bg-white/50 backdrop-blur-sm transition-all duration-300 hover:bg-blue-400/10 download-loader">
-                <div className="flex items-center justify-center relative">
-                    <ArrowDownTrayIcon
-                    className="mr-2 w-4 h-4 md:w-5 md:h-5 text-blue-400 group-hover:translate-y-1
-                    transition-transform"/>
-                    <span className="text-blue-400 font-sf-display font-semibold text-sm md:text-base">
-                        Download CV
-                    </span>
-                </div>
-                </a>
+                    <a 
+                    href='https://wa.me/6282225596862' 
+                    target='_blank' 
+                    rel="noopener noreferrer" 
+                    className="px-8 md:px-10 py-4 rounded-full relative group
+                    w-full sm:w-max flex justify-center overflow-hidden
+                    bg-linear-to-r from-blue-600 to-cyan-600 hover:from-blue-500 hover:to-cyan-500 transition-all
+                    duration-300">
+                        <span className="relative flex items-center font-sf-display justify-center text-white
+                        font-semibold text-base md:text-lg gap-2">
+                            <div className="relative h-6 md:h-7 overflow-hidden flex flex-col justify-center">
+                                <div className="transition-transform duration-300 ease-out group-hover:translate-y-full">
+                                    Contact Me
+                                </div>
+                                <div className="absolute inset-x-0 transition-transform duration-300 ease-out -translate-y-full group-hover:translate-y-0 text-center whitespace-nowrap">
+                                    Contact Me
+                                </div>        
+                            </div>
+                            <ArrowRightIcon className="w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 group-hover:translate-x-1"/>
+                        </span>
+                    </a>
+                    <a 
+                    href="/cv.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="border-2 border-blue-400 px-8 md:px-10 py-4
+                    rounded-full relative group w-full sm:w-max flex justify-center overflow-hidden
+                    bg-white/50 backdrop-blur-sm transition-all duration-300 hover:bg-blue-400/10 download-loader">
+                        <div className="flex items-center justify-center relative gap-2">
+                            <ArrowDownTrayIcon
+                            className="w-4 h-4 md:w-5 md:h-5 text-blue-400 transition-transform duration-300 
+                            group-hover:scale-115"/>
+                            <div className="relative h-6 md:h-7 overflow-hidden flex flex-col justify-center 
+                            text-blue-400 font-sf-display font-semibold text-base md:text-lg">
+                                <div className="transition-transform duration-300 ease-out 
+                                group-hover:translate-y-full">
+                                    Download CV
+                                </div>
+                                <div className="absolute inset-x-0 transition-transform duration-300 ease-out 
+                                -translate-y-full group-hover:translate-y-0 text-center whitespace-nowrap">
+                                    Download CV
+                                </div>
+                            </div>
+                        </div>
+                    </a>
                 </div>
             </div>
             {/* Image */}

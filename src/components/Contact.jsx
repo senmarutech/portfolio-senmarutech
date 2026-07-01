@@ -93,15 +93,21 @@ const Contact = () => {
                         {/* Button */}
                         <motion.button
                         type='submit'
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
                         className='w-full px-6 md:px-8 py-3 md:py-4 bg-linear-to-r
                         from-blue-500 to-cyan-500 text-white rounded-full font-semibold
                         text-base md:text-lg shadow-lg font-sf-display hover:shadow-cyan-600/30 transition-all
-                        duration-300 flex items-center justify-center gap-2 group'>
-                            <span> Send Message </span>
-                            <FaPaperPlane className='text-sm md:text-base group-hover:translate-x-1 transition-transform
-                            group-hover:-translate-y-1'/>
+                        duration-300 flex items-center justify-center gap-2 group overflow-hidden'>
+                        <div className="relative h-6 md:h-7 overflow-hidden flex flex-col justify-center">
+                            <div className="transition-transform duration-300 ease-out group-hover:translate-y-full">
+                                Send Message
+                            </div>
+                            <div className="absolute inset-x-0 transition-transform duration-300 ease-out -translate-y-full group-hover:translate-y-0 text-center whitespace-nowrap">
+                                Send Message
+                            </div>
+                        </div>
+                        <div className="flex items-center justify-center">
+                            <FaPaperPlane className='text-sm md:text-base transition-transform duration-300 group-hover:scale-115'/>
+                        </div>
                         </motion.button>
                     </form>
                 </motion.div>

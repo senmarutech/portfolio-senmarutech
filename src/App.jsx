@@ -10,6 +10,7 @@ import Projects from "./components/Projects"
 import Testimonials from "./components/Testimonials"
 import Contact from "./components/Contact"
 import Footer from "./components/Footer"
+import SkillsHero from "./components/SkillsHero"
 
 const App = () => {
   useEffect(() => {
@@ -26,6 +27,7 @@ const App = () => {
       <Particle />
       <Navbar />
       <Hero />
+      <SkillsHero />
       <About />
       <Skills />
       <Projects />

@@ -188,17 +188,37 @@ export default function About() {
                     data-aos="fade-up"
                     data-aos-delay="400">
                       <a href="#projects" className="px-8 md:px-10 py-4 rounded-full font-semibold
-                      transition-all duration-300 flex items-center text-base md:text-lg justify-center
+                      transition-all duration-300 flex items-center text-base md:text-lg justify-center overflow-hidden
                       bg-linear-to-r from-blue-600 to-cyan-600 text-white
-                      hover:from-blue-500 hover:to-cyan-500 group font-sf-display cursor-pointer">
-                        View Project
-                        <ArrowRightIcon className="w-4 h-4 md:w-5 md:h-5 ml-2 group-hover:translate-x-1 transition-transform"/>
+                      hover:from-blue-500 hover:to-cyan-500 group font-sf-display cursor-pointer gap-2">
+                        <div className="relative h-6 md:h-7 overflow-hidden flex flex-col justify-center">
+                            <div className="transition-transform duration-300 ease-out 
+                            group-hover:translate-y-full">
+                                View Project
+                            </div>
+                            <div className="absolute inset-x-0 transition-transform duration-300 ease-out 
+                            -translate-y-full group-hover:translate-y-0 text-center whitespace-nowrap">
+                                View Project
+                            </div>   
+                        </div>
+                        <ArrowRightIcon className="w-4 h-4 md:w-5 md:h-5 transition-transform duration-300 
+                        group-hover:translate-x-1"/>
                       </a>
-                      <a href="#contact" className="px-8 md:px-10 py-4 font-sf-display rounded-full font-semibold
-                      transition-all duration-300 flex items-center text-base md:text-lg justify-center
-                      border-2 border-blue-400 text-blue-400 hover:bg-blue-400/10 cursor-pointer">
-                        <ChatBubbleLeftRightIcon className="w-4 h-4 md:w-5 md:h-5 mr-2 text-blue-400" />
-                        Contact Me
+                      <a href="#contact" className="px-8 md:px-10 py-4 font-sf-display rounded-full 
+                      font-semibold transition-all duration-300 flex items-center text-base md:text-lg justify-center overflow-hidden
+                      border-2 border-blue-400 text-blue-400 hover:bg-blue-400/10 cursor-pointer group gap-2">
+                        <ChatBubbleLeftRightIcon className="w-4 h-4 md:w-5 md:h-5 text-blue-400 
+                        ransition-transform duration-300 group-hover:scale-115"/>
+                        <div className="relative h-6 md:h-7 overflow-hidden flex flex-col justify-center">
+                            <div className="transition-transform duration-300 ease-out 
+                            group-hover:translate-y-full">
+                                Contact Me
+                            </div>
+                            <div className="absolute inset-x-0 transition-transform duration-300 ease-out 
+                            -translate-y-full group-hover:translate-y-0 text-center whitespace-nowrap">
+                                Contact Me
+                            </div>                       
+                        </div>
                       </a>
                     </div>
                 </div>
