@@ -14,7 +14,7 @@ const SkillsHero = () => {
 
     const duplicatedSkills = [...skillsHero, ...skillsHero, ...skillsHero];
   return (
-    <section className="py-4 relative -m-14">
+    <section className="py-4 relative overflow-x-hidden w-full">
         <div className="container mx-auto px-8">
             <div className="relative overflow-hidden py-3 group scale-105 mask-[linear-gradient(to_right,transparent,white_15%,white_85%,transparent)]">
                 <motion.div
