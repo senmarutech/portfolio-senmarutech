@@ -35,8 +35,8 @@ const SkillsHero = () => {
                         return (
                             <motion.div
                             key={`skill-${skill.name}-${index}`}
-                            className="flex items-center gap-2 w-42 md:w-52 px-3 py-2 md:px-4 md:py-3 shrink-0 justify-center
-                            rounded-full bg-white/50 backdrop-blur-sm shadow-xl"
+                            className="flex items-center gap-2 w-42 md:w-52 px-4 py-2 md:px-4 md:py-3 
+                            shrink-0 justify-center rounded-full bg-white/50 backdrop-blur-sm shadow-xl"
                             whileHover={{ 
                                 scale: 1.1,
                                 y: -2,
